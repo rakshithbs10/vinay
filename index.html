@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS reset*/
+    body{
+        font-family: 'Heebo', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/vinay.jpg');
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        font-size: 18px;
+    }
+    .mid{
+        /* border: 2px solid green; */
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+    }
+    .right{
+        /* border: 2px solid blue; */
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: black;
+    }
+    .left img{
+        display: block;
+        align-items: center;
+        width: 100px;
+        filter: invert(100%);
+    }
+    .btn{
+        font-family: 'Heebo', sans-serif;
+        display: inline-block;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        /* border: 2px solid grey; */
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(61, 57, 57);
+    }
+    .container{
+        border: 2px solid black;
+        margin: 140px 100px;
+        padding: 20px 20px;
+        width: 530px;
+        display: block;
+        border-radius: 20px;
+    }
+    .form-group input{
+        font-size: 24px;
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 6px;
+        border: 2px solid purple;
+        margin: 11px auto;
+        border-radius: 12px;
+        font-family: 'Heebo', sans-serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .btn1{
+        font-family: 'Heebo', sans-serif;
+        display: flex;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        /* border: 2px solid grey; */
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left-box for logo -->
+        <div class="left">
+            <img src="img/logo1.png" alt="gym logo">
+            Vinay Fitness
+        </div>
+        <!-- Mid-box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right-box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email-ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <!-- <button class="btn">Submit</button> -->
+            <a class="btn1" target="_blank" href="https://youtu.be/dQw4w9WgXcQ">Submit</a>
+        </form>
+    </div>
+</body>
+</html>
